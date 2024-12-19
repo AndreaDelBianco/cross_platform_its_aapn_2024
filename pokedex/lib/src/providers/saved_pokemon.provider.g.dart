@@ -1,26 +1,25 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'http_client.dart';
+part of 'saved_pokemon.provider.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$httpClientHash() => r'3dd476ba070401a8099390250a3b86d04f4e1db8';
+String _$savedPokemonHash() => r'0f3a0e0dceaba92e70f0adf4d2e5e01ba6b1ae5b';
 
-/// See also [httpClient].
-@ProviderFor(httpClient)
-final httpClientProvider = AutoDisposeProvider<Dio>.internal(
-  httpClient,
-  name: r'httpClientProvider',
+/// See also [SavedPokemon].
+@ProviderFor(SavedPokemon)
+final savedPokemonProvider =
+    AutoDisposeNotifierProvider<SavedPokemon, List<PokemonModel>>.internal(
+  SavedPokemon.new,
+  name: r'savedPokemonProvider',
   debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$httpClientHash,
+      const bool.fromEnvironment('dart.vm.product') ? null : _$savedPokemonHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-@Deprecated('Will be removed in 3.0. Use Ref instead')
-// ignore: unused_element
-typedef HttpClientRef = AutoDisposeProviderRef<Dio>;
+typedef _$SavedPokemon = AutoDisposeNotifier<List<PokemonModel>>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package
